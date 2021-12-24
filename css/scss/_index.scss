@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -20,7 +20,7 @@
 }
 .texto-secundario {
   font-size: 24px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .header-bg {
   background: #000;
@@ -76,7 +76,7 @@
       }
       p {
         font-size: 12px;
-        padding-top: 30px;
+        padding-top: 50px;
         a {
           text-decoration: underline;
         }
@@ -91,7 +91,141 @@
 .restrospectiva-bg {
   color: #202f72;
   background: #f46ebe;
-  div {
-    padding: 70px 0 70px 0;
+
+  .restrospectiva-wrapper {
+    background: url(../img/wrapper-bg.svg) no-repeat;
+    background-position: right -1163px bottom -513px;
+    .restrospectiva-info {
+      padding: 70px 0 64px 0;
+      h2 {
+        padding-bottom: 30px;
+      }
+      .restrospectiva-call {
+        padding-bottom: 30px;
+        a:first-child {
+          margin-right: 30px;
+        }
+      }
+      .texto-callback {
+        text-decoration: underline;
+        color: #202f72;
+      }
+    }
+  }
+}
+
+.spotify-free-bg {
+  background: #2941ab;
+  color: #1ed760;
+  .spotify-free-bg-circles {
+    background: url(../img/circles.svg) no-repeat;
+    .spotify-free {
+      padding: 70px 0 230px 0;
+      .btn-spotify-free {
+        color: #2941ab;
+        background: #1ed760;
+        border-radius: 500px;
+        padding: 14px 32px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.footer-bg {
+  background: #000;
+  .footers {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      h4 {
+        color: #919496;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 0.96px;
+        font-weight: 900;
+        margin: 20px 0;
+      }
+
+      .footer-empresa ul li + li,
+      .footer-comunidades ul li + li,
+      .footer-links ul li + li {
+        padding-top: 9px;
+      }
+      ul {
+        li {
+          a {
+            color: #fff;
+            &:hover {
+              color: #1ed760;
+            }
+          }
+        }
+      }
+
+      .footer-redes-sociais {
+        ul {
+          display: flex;
+          align-items: center;
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 54px;
+            height: 54px;
+            background: #222326;
+            border-radius: 50%;
+            font-size: 24px;
+            margin-left: 20px;
+            &:hover {
+              color: #1ed760;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-medium {
+      padding-top: 60px;
+      .footer-medium-cont {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 0;
+        a {
+          color: #919496;
+          font-size: 14px;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #919496;
+      font-size: 12px;
+      ul {
+        display: flex;
+        padding: 15px 0;
+        li {
+          a {
+            color: #919496;
+            &:hover {
+              color: #1ed760;
+            }
+          }
+        }
+        li + li {
+          margin-left: 15px;
+        }
+      }
+    }
   }
 }
